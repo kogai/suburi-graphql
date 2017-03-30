@@ -4,6 +4,4 @@ version = "0.1.0"
 authors = ["小飼慎一 <kogai0121@gmail.com>"]
 
 [dependencies]
-juniper = "0.7.0"
 hyper = "0.10.5"
-iron = "0.5.1"

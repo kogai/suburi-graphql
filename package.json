@@ -1,0 +1,15 @@
+{
+  "name": "suburi-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "author": "小飼慎一 <kogai0121@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server"
+  },
+  "dependencies": {
+    "eslint": "^3.18.0",
+    "graphql": "^0.9.1"
+  }
+}

@@ -6,10 +6,13 @@
   "author": "小飼慎一 <kogai0121@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server",
+    "start": "nodemon src/server",
     "test": "eslint src/*.js"
   },
   "dependencies": {
-    "graphql": "^0.9.1"
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.3",
+    "graphql": "^0.9.1",
+    "nodemon": "^1.11.0"
   }
 }

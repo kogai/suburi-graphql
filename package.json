@@ -6,13 +6,10 @@
   "author": "小飼慎一 <kogai0121@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server"
+    "start": "node src/server",
+    "test": "eslint src/*.js"
   },
   "dependencies": {
     "graphql": "^0.9.1"
-  },
-  "devDependencies": {
-    "eslint": "^3.18.0",
-    "eslint-config-google": "^0.7.1"
   }
 }

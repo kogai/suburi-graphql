@@ -1,18 +1,20 @@
-var { graphql, buildSchema } = require('graphql');
+var express = require('express');
+var graphqlHTTP = require('express-graphql');
+var { buildSchema } = require('graphql');
 
 var schema = buildSchema(`
   type Query {
-    hello: String,
-    foo: String,
+    hello: String
   }
 `);
 
-var root = {
-  hello: () => 'Hello world!',
-  foo: () => "this is foo",
-};
+var root = { hello: () => 'Hello world!' };
 
-graphql(schema, '{ hello, foo }', root)
-  .then((response) => {
-    console.log(response);
-  });
+var app = express();
+app.use('/graphql', graphqlHTTP({
+  schema: schema,
+  rootValue: root,
+  graphql: true,
+}));
+
+app.listen(3000, () => console.log('Now browse to localhost:3000/graphql'));

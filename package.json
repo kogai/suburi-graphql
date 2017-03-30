@@ -9,7 +9,10 @@
     "start": "node src/server"
   },
   "dependencies": {
-    "eslint": "^3.18.0",
     "graphql": "^0.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-google": "^0.7.1"
   }
 }
